@@ -1,6 +1,5 @@
-package piscine
+package 
 
-func Pointone(n *int) {
+func PointOne(n *int) {
 	*n = 1
-
 }
