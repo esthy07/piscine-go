@@ -1,2 +1,3 @@
 #! /bin/bash
-ls -l | awk '!(NR%2){print}'
+
+ls -l | sed '1d; n; d'
