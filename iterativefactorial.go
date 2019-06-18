@@ -2,7 +2,7 @@ package piscine
 
 import "math"
 
-func RecursiveFactorial(x int) int {
+func IterativeFactorial(x int) int {
 	if 0 > x {
 		return 0
 	} else if 0 == x || 1 == x {
