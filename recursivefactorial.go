@@ -3,9 +3,9 @@ package piscine
 import "math"
 
 func RecursiveFactorial(x int) int {
-	if 0 > x {
+	if x < 0 || x > math.MaxInt32 { 
 		return 0
-	} else if 0 == x || 1 == x{
+	} else if 0 == x || 1 == x {
 		return 1
 	} else {
 		res := x*RecursiveFactorial(x-1) > math.MaxInt32
@@ -16,4 +16,3 @@ func RecursiveFactorial(x int) int {
 		}	
 	}
 }
-
