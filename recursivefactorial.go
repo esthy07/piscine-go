@@ -12,7 +12,7 @@ func RecursiveFactorial(x int) int {
 		if res {
 			return 0
 		} else {
-			return x * RecursviveFactorial(x-1)
+			return x * RecursiveFactorial(x-1)
 		}	
 	}
 }
