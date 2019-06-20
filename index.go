@@ -1,6 +1,6 @@
 package piscine
 
-import "fmt"
+import "strings"
 
 func Index(s string, toFind string) int {
 	return string.Index(s, toFind)
