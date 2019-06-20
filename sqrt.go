@@ -13,7 +13,7 @@ func Sqrt(nb int) int {
 		} else if i*i > nb {
 			nb = 0
 			break
-		} 	
-	} 
+		}
+	}
 	return nb
 }
