@@ -10,10 +10,10 @@ func Sqrt(nb int) int {
 		if nb == i*i {
 			nb = i
 			break
-	    } else if i*i > nb {
+		} else if i*i > nb {
 			nb = 0
 			break
 		}
 	}
-	return nb	
+	return nb
 }
