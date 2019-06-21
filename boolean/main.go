@@ -21,21 +21,23 @@ func printStr(str string) {
 	arrayStr := []rune(str)
 
 	for i := 0; i < len(arrayStr); i++ {
-		z01.PrintRune(arrayStr[i])
+		PrintRune(arrayStr[i])
 	}
-	z01.PrintRune('\n')
+	PrintRune('\n')
 }
 
-func isEven(nbr int) boolean {
-	if even(nbr) == 1 {
-		return yes
-	} else {
-		return no
-	}
+func isEven() int {
+	lengthOfArg := os.Arg [1:]
+	if len(lengthOfArg) % 2 == 0 {
+		return 1
+	}	
+	return 0
 }
 
 func main() {
-	if isEven(lengthOfArg) == 1 {
+	EvenMsg := "I have an even number of arguments"
+	OddMsg := "I have an odd number of arguments"
+	if isEven() == 1 {
 		printStr(EvenMsg)
 	} else {
 		printStr(OddMsg)
