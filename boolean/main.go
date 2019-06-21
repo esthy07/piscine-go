@@ -12,7 +12,7 @@ func PrintRune(r rune) error {
 		return errors.New("The rune is not a valid value to encode in UTF-8")
 	}	
 	p := make([]byte, l)
-	utf-8.EncodeRune(p, r)
+	utf8.EncodeRune(p, r)
 	_, err := os.Stdout.Write(p)
 	return err
 }
