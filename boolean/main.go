@@ -27,7 +27,7 @@ func printStr(str string) {
 }
 
 func isEven() int {
-	lengthOfArg := os.Arg [1:]
+	lengthOfArg := os.Arg[1:]
 	if len(lengthOfArg) % 2 == 0 {
 		return 1
 	}	
